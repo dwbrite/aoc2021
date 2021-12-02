@@ -1,6 +1,4 @@
-use std::borrow::BorrowMut;
-use std::fs::File;
-use std::io::{self, prelude::*, BufReader};
+use std::io::{self};
 use itertools::Itertools;
 
 fn main() -> io::Result<()> {
