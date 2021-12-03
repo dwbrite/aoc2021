@@ -1,7 +1,6 @@
-use std::io::{self};
 use itertools::Itertools;
 
-fn main() -> io::Result<()> {
+fn main() -> anyhow::Result<()> {
     one()?;
     two()
 }
@@ -14,7 +13,7 @@ fn input() -> Vec<(String, i32)> {
     }).collect()
 }
 
-fn one() -> io::Result<()> {
+fn one() -> anyhow::Result<()> {
     let mut horizontal = 0;
     let mut vertical = 0;
     
@@ -34,7 +33,7 @@ fn one() -> io::Result<()> {
 
 
 
-fn two() -> io::Result<()> {
+fn two() -> anyhow::Result<()> {
     let mut horizontal = 0;
     let mut vertical = 0;
     let mut aim = 0;

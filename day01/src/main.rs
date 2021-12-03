@@ -1,11 +1,11 @@
-use std::io::{self};
 
-fn main() -> io::Result<()> {
+
+fn main() -> anyhow::Result<()> {
     one()?;
     two()
 }
 
-fn one() -> io::Result<()> {
+fn one() -> anyhow::Result<()> {
     let s = include_str!("../input");
 
     let mut increased = 0;
@@ -27,7 +27,7 @@ fn one() -> io::Result<()> {
 
 
 
-fn two() -> io::Result<()> {
+fn two() -> anyhow::Result<()> {
     let s = include_str!("../input");
 
     let mut window_sums: Vec<i32> = vec![];
